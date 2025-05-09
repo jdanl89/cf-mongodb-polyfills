@@ -1,7 +1,10 @@
 {
-  "name": "@jdanl89/cf-mongodb-polyfills",
+  "name": "@ematechlabs/cf-mongodb-polyfills",
   "description": "cloudflare worker polyfill for net, tls, and dns for making mongodb connections work in workerd",
-  "repository": "https://github.com/jdanl89/cf-mongodb-polyfills",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdanl89/cf-mongodb-polyfills.git"
+  },
   "version": "1.0.2",
   "main": "./dist/index.ts",
   "files": [
@@ -44,5 +47,21 @@
     "@types/node": "^22.10.2",
     "ts-node": "^10.9.2",
     "typescript": "^5.7.2"
-  }
+  },
+  "dependencies": {
+    "acorn": "^8.14.1",
+    "acorn-walk": "^8.3.4",
+    "arg": "^4.1.3",
+    "create-require": "^1.1.1",
+    "diff": "^4.0.2",
+    "make-error": "^1.3.6",
+    "undici-types": "^6.21.0",
+    "v8-compile-cache-lib": "^3.0.1",
+    "yn": "^3.1.1"
+  },
+  "types": "./dist/index.d.ts",
+  "bugs": {
+    "url": "https://github.com/jdanl89/cf-mongodb-polyfills/issues"
+  },
+  "homepage": "https://github.com/jdanl89/cf-mongodb-polyfills#readme"
 }
