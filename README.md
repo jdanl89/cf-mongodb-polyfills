@@ -1,6 +1,7 @@
 # cf-mongodb-polyfills
 This package allows the use of the `mongodb` npm package in a cloudflare worker. It does this by polyfilling the `net` and `tls` modules in the `mongodb` package to use the `cf-mongodb-polyfills` package instead.
 
+This package was forked from [jchoi2x/cf-mongodb-polyfills](https://github.com/jchoi2x/cf-mongodb-polyfills) and transpiled from TS to JS.
 
 ## Description
 
@@ -27,9 +28,9 @@ To use the package in a cloudflare worker app, you must create [module aliases]
 # ...
 
 [alias]
-"net" = "@jchoi2x/cf-mongodb-polyfills/net"
-"dns" = "@jchoi2x/cf-mongodb-polyfills/dns"
-"tls" = "@jchoi2x/cf-mongodb-polyfills/tls"
+"net" = "@jdanl89/cf-mongodb-polyfills/net"
+"dns" = "@jdanl89/cf-mongodb-polyfills/dns"
+"tls" = "@jdanl89/cf-mongodb-polyfills/tls"
 ```
 
 
