@@ -5,32 +5,31 @@
     "type": "git",
     "url": "git+https://github.com/jdanl89/cf-mongodb-polyfills.git"
   },
-  "version": "1.0.2",
-  "main": "./dist/index.ts",
+  "version": "1.0.3",
+  "main": "./dist/index.js",
   "files": [
-    "dist",
-    "src"
+    "dist"
   ],
   "exports": {
     ".": {
-      "import": "./src/index.ts",
-      "require": "./src/index.ts"
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
     },
     "./net": {
-      "import": "./src/net.ts",
-      "require": "./src/net.ts"
+      "import": "./dist/net.js",
+      "require": "./dist/net.js"
     },
     "./tls": {
-      "import": "./src/tls.ts",
-      "require": "./src/tls.ts"
+      "import": "./dist/tls.js",
+      "require": "./dist/tls.js"
     },
     "./dns": {
-      "import": "./src/dns.ts",
-      "require": "./src/dns.ts"
+      "import": "./dist/dns.js",
+      "require": "./dist/dns.js"
     },
     "./net-mock": {
-      "import": "./src/net-mock.ts",
-      "require": "./src/net-mock.ts"
+      "import": "./dist/net-mock.js",
+      "require": "./dist/net-mock.js"
     }
   },
   "scripts": {},
